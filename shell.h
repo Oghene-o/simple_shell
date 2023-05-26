@@ -230,6 +230,11 @@ void check_chain(info_t *, char *, size_t *, size_t, size_t);
 int replace_alias(info_t *);
 int replace_vars(info_t *);
 int replace_string(char **, char *);
-
+/* team_getline*/
+void sigintHandler(__attribute__((unused))int sig_num);
+int _getline(info_t *info, char **ptr, size_t *length);
+ssize_t read_buf(info_t *info, char *buf, size_t *i);
+ssize_t get_input(info_t *info);
+ssize_t input_buf(info_t *info, char **buf, size_t *len);
 #endif
 
